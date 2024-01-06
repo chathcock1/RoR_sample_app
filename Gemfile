@@ -20,7 +20,7 @@ gem "jbuilder" # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "bcrypt", "~> 3.1.7"
 
 gem "tzinfo-data", platforms: %i[ windows jruby ] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "bootsnap", require: false # Reduces boot times through caching; required in config/boot.rb
+gem "bootsnap", "~>1.12", require: false # Reduces boot times through caching; required in config/boot.rb
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
@@ -43,6 +43,12 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem "capybara"
-  gem "selenium-webdriver"
+  gem "capybara",                   "3.39.2"
+  gem "selenium-webdriver",         "4.2.0"      
+  gem "webdrivers",                 "5.0.0"
+  gem "rails-controller-testing",   "1.0.5"
+  gem "minitest",                   "5.20.0"
+  gem "minitest-reporters",         "1.5.0"
+  gem "guard",                      "2.18.0"
+  gem "guard-minitest",             "2.4.6"
 end
