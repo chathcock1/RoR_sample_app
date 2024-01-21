@@ -39,6 +39,8 @@ test:
 
 production: 
   adapter: postgresql
-  database: sample_app_production_database
+  encoding: unicode
   pool: 5
-  timeout: 5000
+  database: sample_app_production_database
+  username: sample_app_production
+  password: <%= ENV['SAMPLE_APP_DATABASE_PASSWORD'] %>
