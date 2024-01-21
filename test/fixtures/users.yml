@@ -1,5 +1,6 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+<<<<<<< HEAD
 # one:
 #   name: MyString
 #   email: MyString
@@ -7,3 +8,6 @@
 # two:
 #   name: MyString
 #   email: MyString
+=======
+#empty
+>>>>>>> sign-up
